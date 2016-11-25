@@ -1,0 +1,156 @@
+# Site settings
+baseurl = "https://www.example.com"
+languageCode = "en-us"
+title = "Matthew Stevenson, M.D."
+theme = "hugo-highlights-theme"
+
+# Enter your tracking code to enable Google analytics
+googleAnalytics = ""
+
+[params]
+
+  # You can use Markdown for urls [text](//domain.tld/source)
+  #
+  # All icons using Fontawesom's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons.
+
+  # To provide more meta data for search engings feel free to add a few informations.
+  # This lines will be inserted as meta tags.
+  name = "Your Name"
+  description = "Your Description"
+  disqusShortname = "stevensonmt-github-io-mycv.disqus.com"
+  # For a static site it's not possible to provide a contact form. The contact form uses
+  # www.formspree.io as a proxy. The form makes a Post request to their servers to send an email
+  # Visitors can send up to a 1000 emails each month
+  #
+  # How to setup formspree
+  #
+  # - set your email address under 'email' below
+  # - upload the generated site to your server
+  # - send a dummy email to yourself to confirm your account
+  # - click the confirmation link in the email from www.formspree.io
+  # - That's all. Enjoy mailing!
+  email = "your@mail.com"
+
+  # Hero Section
+  [params.hero]
+    title = "Matthew Stevenson, M.D."
+    description = "board certified neurologist, certifiable nerd"
+    button = "read on"
+
+  # about section
+  [params.about]
+    enable = true
+    title = "Medical Practice"
+    description = "  * Multicare Neurology, Puyallup, WA 2016-present"
+    description2 = "  * Clinical Neuroscience, Fort Worth, TX 2012-2015"
+    button = "next"
+    # the picture is storead at static/images/
+    picture = "pic01.jpg"
+
+  # skill section
+  [params.skill_list]
+    enable = true
+    title = "Medical Training"
+    description = "+ Clinical Neurophysiology Fellowship (EEG/Epilepsy track)  University of Michigan 2011-2012"
+    description2 = "+ Neurology Residency<br />University of TX Southwestern Medical Center 2007-2011"
+    description3 = "+ Medical School<br />University of TX Southwestern Medical School 2003-2007"
+    button = "next"
+    # the picture is storead at static/images/
+    picture = "pic02.jpg"
+
+    [[params.skills]]
+      icon = "fa-user-md"
+      title = "Diagnosis and management of neurologic diseases"
+
+    [[params.skills]]
+      icon = "fa-stethoscope"
+      title = "Interpretation of EEG, EMG, and Evoked Potentials"
+
+    [[params.skills]]
+      icon = "fa-code"
+      title = "Computer hobbyist"
+
+    [[params.skills]]
+      icon = "fa-rebel"
+      title = "My faith in my friends is my weakness"
+  # infos section
+  [params.infos]
+    enable = true
+    title = "Publications"
+    description = "+ Victoria S.S. Wong, Matthew Stevenson, and Linda Selwa, “The presentation of seizures and epilepsy in YouTube videos,” Epilepsy and Behavior vol. 27:1 (247-250)."
+    description2 = "+ Amer M. Awad and Mathew Stevenson, “Isolated Central Nervous System Vasculitis Associated with Antiribonuclear Protein Antibody,” Case Reports in Neurological Medicine, vol. 2011, Article ID 495201, 4 pages, 2011. doi:10.1155/2011/495201."
+    description3 = "+ February 2010 Carrell-Krusen Neuromuscular Symposium Dallas, TX Myopathy with Ataxia: case report of nemaline myopathy associated with a cerebellar ataxia syndrome"
+    # the picture is storead at static/images/
+    picture = "pic03.jpg"
+
+    [params.licenses]
+    enable = true
+    title = "Licenses and Certifications"
+    description = "+ Board Certified in Adult Neurology by American Board of Psychiatry and Neurology 2012"
+    description2 = "+ Texas and Washington state medical licenses"
+    description3 = "+ Unrestricted DEA"
+    picture = "pic02.jpg"
+
+  # footer section
+  # this section includes
+  #
+  # - the contact form
+  # - social icons
+  #
+  # It's possible to disable the whole footer or disable only social icons or contact form
+
+  [params.footer]
+    enable = true
+    title = "Get in Touch"
+
+    # contact form
+    [params.footer.contact]
+      enable = true
+
+    [params.footer.contact.form]
+      name = "Name"
+      email = "Your Email"
+      message = "Your Message"
+      button = "send message"
+
+    # social icons
+    [params.footer.social_list]
+      enable = true
+
+      [[params.footer.social]]
+        title = "Bitbucket"
+        icon = "fa-bitbucket"
+        link = "http://bitbucket.org/stevensonmt"
+
+      [[params.footer.social]]
+        title = "LinkedIn"
+        icon = "fa-linkedin"
+        link = "http://www.linkedin.com/in/matt-stevenson-ba12596"
+
+      [[params.footer.social]]
+        title = "Github"
+        icon = "fa-github"
+        link = "http://github.com/stevensonmt"
+
+      [[params.footer.social]]
+        title = "Heorku"
+        icon = "fa-cloud-upload"
+        link = "https://radiant-waters-28073.herokuapp.com"
+
+      [[params.footer.social]]
+        title = "Email"
+        icon = "fa-envelope"
+        link = "mailto:stevensonmt@gmail.com"
+
+    # copyright
+    #[params.footer.copyright.notice]
+
+      [[params.footer.copyright.notice]]
+        text = "© Matthew Stevenson"
+
+      [[params.footer.copyright.notice]]
+        text = "Design: [HTML5UP](//html5up.net)"
+
+      [[params.footer.copyright.notice]]
+        text = "Demo Images: [Unsplash](//unsplash.com/)"
