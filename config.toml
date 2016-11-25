@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "stevensonmt_cv/"
+baseurl = "stevensonmt.github.io/"
 languageCode = "en-us"
 title = "Matthew Stevenson, M.D."
 theme = "hugo-highlights-theme"
